@@ -1,0 +1,7 @@
+mac -> export M2_HOME=/Users/userame/software/apache-maven-3.3.9
+      export PATH=@M2_HOME/bin:$PATH
+      
+windows-> path env variable-><Mavenhome>/bin folder  
+
+__________________________________________________________
+Notes:
