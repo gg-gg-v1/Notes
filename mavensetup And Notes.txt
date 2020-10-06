@@ -5,3 +5,5 @@ windows-> path env variable-><Mavenhome>/bin folder
 
 __________________________________________________________
 Notes:
+
+1. to skip the test -> mvn install -DskipTests
