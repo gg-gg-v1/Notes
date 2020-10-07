@@ -7,3 +7,4 @@ __________________________________________________________
 Notes:
 
 1. to skip the test -> mvn install -DskipTests
+![Screenshot](mavenphasesndgoals.png)
