@@ -95,10 +95,12 @@ Maven dependency transitivity resolution
 When you include a maven dependency and it has it’s own other dependencies (i.e. transitive dependencies) then you may want to be clear about the scope of these transitive dependencies as well.
 
 Let’s understand about maven transitive dependencies with a simple table. In this table, if a dependency is set to the scope in the left column, transitive dependencies at top row will result in a dependency with the scope listed at their intersection.
+```
 
 Dependency	compile	provided	runtime	test
-compile	compile	–	 	runtime	–
-provided	provided	–		provided	–
-runtime	runtime	–		runtime	–
-test	      test	      –		test
+compile	compile	–	runtime	–
+provided	provided	–	provided	–
+runtime	runtime	–	runtime	–
+test	test	–	test	–
 
+```
