@@ -7,4 +7,6 @@ __________________________________________________________
 Notes:
 
 1. to skip the test -> mvn install -DskipTests
-![Screenshot](mavenphasesndgoals.png)
+
+2. maven life cycle phases
+![](https://github.com/gg-gg-codes/EnvSetup/mavenphasesndgoals.png)
