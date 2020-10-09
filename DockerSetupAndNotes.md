@@ -21,8 +21,9 @@
 
 16 attach mode -> docker run someimage, detach mode docker run -d someimage.
 
+17. docker run -d centos sleep 20 -> will runthe containerfor 20seconds and itwillget exited if it doesnt have any service tobe run inside the container, so after  20 seconds docker ps will show nothing.
+
 port mapping:
   
-17 docker run -p 80:3000 simple-webapp -> if you access like this http://192.168.1.1:80 [http://<docker-host-ip>] -> it will map public traffic to 3000 port inside the container - here 3000 port is docker container port with someip <172.23.2.2>.
-  
+18 docker run -p 80:3000 simple-webapp -> if you access like this http://192.168.1.1:80 [http://<docker-host-ip>] -> it will map public traffic to 3000 port inside the container - here 3000 port is docker container port with someip <172.23.2.2>.
   
