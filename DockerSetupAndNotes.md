@@ -9,7 +9,7 @@
 9. docker pull ubuntu -> it will just download the image but will not run it so that later on when we run it, it will not pull this image again, its gonna directly run the image.
 10.docker exec cool_cannon cat /etc/hosts -> will show the contents of /hosts file in docker container.
 
-11. docker run -d centos sleep 20 -> will runthe containerfor 20seconds and itwillget exited if it doesnt have any service tobe run inside the container, so after      20 seconds docker ps will show nothing.
+11. docker run -d centos sleep 20 -> will runthe containerfor 20seconds and itwillget exited if it doesnt have any service tobe run inside the container, so after  20 seconds docker ps will show nothing.
 
 12.docker rm 345 a0e 774 or docker rm 34 a0 77 -> will remov the cotnainers whose starting 3 letters are 345 a0e and 774.
 
