@@ -32,3 +32,18 @@ volume mapping:
 19. docker run -v /opt/localdatadir:/var/lib/containerdir mysql
 
 20. docker attach <container-id> -> will bring docker container back to foreground.
+  
+21. docker run -p 8080:8080 jenkins -> will run the jenkinson port 8080 so that you can run this by : hostip:8080
+
+Dockerfile:
+
+```
+FROM Ubuntu
+RUN apt-get update
+RUN apt-get install python
+RUN pip install flask
+RUN pip install flask-mysql
+COPY . /opt/source-code
+
+```
+
