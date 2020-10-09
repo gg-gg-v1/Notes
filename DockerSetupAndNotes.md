@@ -12,9 +12,13 @@
 11. docker run -d centos sleep 20 -> will runthe containerfor 20seconds and itwillget exited if it doesnt have any service tobe run inside the container, so after      20 seconds docker ps will show nothing.
 
 12.docker rm 345 a0e 774 or docker rm 34 a0 77 -> will remov the cotnainers whose starting 3 letters are 345 a0e and 774.
+
 13. docker exec <container-id> cat /etc/*release* -> its gonna execute the cat command onthe running container and it willshow which versioof os is runing on that particular container.
+  
 14. docker run ubuntu:17.04 -> willpull 17.04 version with tag '17.04' otherwise latest verion with tag 'latest'.
+
 15. docker run -i simgple-prompt-docker -> will run and gives you option to input your data just like STDIN .
+
 16 attach mode -> docker run someimage, detach mode docker run -d someimage.
 
 port mapping:
