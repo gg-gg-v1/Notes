@@ -47,3 +47,9 @@ COPY . /opt/source-code
 ENTRYPOINT FLASK_APP=/opt/source-code/app.py flask run
 ```
 
+22. docker build . or docker build Dockerfile . -t mydockertag
+
+23. docker run -p 8080:8080 -v /root/my-jenkins-data:/var/jenkins_home jenkins  -> with volume mount if it gives access issue then use below command with "-u root "
+
+24. docker run -p 8080:8080 -v /root/my-jenkins-data:/var/jenkins_home -u root jenkins 
+
