@@ -26,4 +26,9 @@
 port mapping:
   
 18 docker run -p 80:3000 simple-webapp -> if you access like this http://192.168.1.1:80 [http://<docker-host-ip>] -> it will map public traffic to 3000 port inside the container - here 3000 port is docker container port with someip <172.23.2.2>.
-  
+
+volume mapping:
+
+19. docker run -v /opt/localdatadir:/var/lib/containerdir mysql
+
+20. docker attach <container-id> -> will bring docker container back to foreground.
