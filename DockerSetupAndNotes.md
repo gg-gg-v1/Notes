@@ -53,3 +53,9 @@ ENTRYPOINT FLASK_APP=/opt/source-code/app.py flask run
 
 24. docker run -p 8080:8080 -v /root/my-jenkins-data:/var/jenkins_home -u root jenkins 
 
+COMMAND and ENTRYPOINT:
+
+25. docker run ubuntu sleep 5 -> docker run ubuntu [COMMAND] -> it will override the default command and conatainer will exit after 5 seconds
+
+26. CMD command param -> CMD sleep 5
+    CMD ["command1","param1"] -> CMD ["sleep","5"]
