@@ -81,7 +81,8 @@ ENTRYPOINT ["sleep2.0"]
 CMD ["20"]
 ```
 
-DOCKER SWARM
+DOCKER SWARM:
+
 28. its the wayto create replicas of app incase if app on dockerhost is down or dockerhost is down then another dockerhost will be up and running with another created replica of app.
 docker manager/master will be one of the docker host and remaining will be worker or slave
 docker swarm init --advertise-addr  192.168.1.2 -> will initialize the manager
