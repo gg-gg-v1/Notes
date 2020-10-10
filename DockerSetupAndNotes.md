@@ -106,3 +106,10 @@ Networking :
 if we run this docker run ubuntu -> it willbein bridge network
 if we run this docker run ubuntu --network=none -> it willbein none means no network
 if we run this docker run ubuntu --network=host -> it will be in host network
+
+30. docker network create \
+>  --driver bridge \
+>  --subnet 189.1.1.1/12 \
+>  custom-isolated-network
+
+above command will create the new user definer or our custom network
