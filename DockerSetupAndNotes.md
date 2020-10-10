@@ -65,7 +65,37 @@ COMMAND and ENTRYPOINT:
 FROM Ubuntu
 ENTRYPOINT ["sleep"]
 CMD ["5"]
+
+try to put entrypoint and cmd in json format
 ```
 above dockerfile will make container to sleep for 5 seconds if we do 'docker run ubuntu-sleeper'
 now if I want to run it for 10 seconds then I can run below command 
 'docker run ubuntu-sleeper 10' -> its going to override the default 5 seconds with 10 seconds.
+
+now to run the sleep command to sleep2.0 [some other command] use entrypoint runtime to do this.
+like this example : docker run --entrypoint sleep2.0 ubuntu-sleeper 20
+so effective dockerfile at runtime willbe 
+```
+FROM Ubuntu
+ENTRYPOINT ["sleep2.0"]
+CMD ["20"]
+```
+
+DOCKER SWARM
+28. its the wayto create replicas of app incase if app on dockerhost is down or dockerhost is down then another dockerhost will be up and running with another created replica of app.
+docker manager/master will be one of the docker host and remaining will be worker or slave
+docker swarm init --advertise-addr  192.168.1.2 -> will initialize the manager
+docker swarm join --token SWMTKN-1-5jmihs2kbv09biyuhd64lvj6jpbggjz8km95g55cxcs06w5107-4hw5a087qd43oe0d61vt9qqw1 192.168.1.2:2377
+```
+docker-compose.yml
+
+services:
+   web:
+     image: "somewebapp"
+     replicas: 5
+  database:
+     image: "mysql"     
+
+```
+docker stack deploy -c docker-compose.yml -> will create 5 replicas of app in 5 docker host.
+29. 
