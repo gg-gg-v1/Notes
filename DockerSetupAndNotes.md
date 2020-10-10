@@ -99,4 +99,10 @@ services:
 
 ```
 docker stack deploy -c docker-compose.yml -> will create 5 replicas of app in 5 docker host.
-29. 
+
+Networking :
+
+29. when we isntlal dockr it creates 3 networks- 1.bridge 2.none 3. host
+if we run this docker run ubuntu -> it willbein bridge network
+if we run this docker run ubuntu --network=none -> it willbein none means no network
+if we run this docker run ubuntu --network=host -> it will be in host network
