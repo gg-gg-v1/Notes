@@ -59,3 +59,13 @@ COMMAND and ENTRYPOINT:
 
 26. CMD command param -> CMD sleep 5
     CMD ["command1","param1"] -> CMD ["sleep","5"]
+
+27. 
+```
+FROM Ubuntu
+ENTRYPOINT ["sleep"]
+CMD ["5"]
+```
+above dockerfile will make container to sleep for 5 seconds if we do 'docker run ubuntu-sleeper'
+now if I want to run it for 10 seconds then I can run below command 
+'docker run ubuntu-sleeper 10' -> its going to override the default 5 seconds with 10 seconds.
