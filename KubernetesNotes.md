@@ -12,7 +12,8 @@ SETUP ON LOCAL:
 
 SAMPLE deployment on local:
 
-1. run 'minikube start'
+Note : with minikube , only you can setup single node cluster . for settinng multinode cluster please use kubeadm
+1. run 'minikube start' 
 
 2. kubectl create deployment hello-minikube --image=k8s.gcr.io/echoserver:1.10
     o/p-> deployment.apps/hello-minikube created
