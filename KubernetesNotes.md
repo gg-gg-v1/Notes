@@ -28,16 +28,20 @@ NAME                              READY   STATUS    RESTARTS   AGE
 hello-minikube-5d9b964bfb-8h4xp   1/1     Running   0          2m14s
 ```
 5. minikube service hello-minikube --url
+```
 🏃  Starting tunnel for service hello-minikube.
 |-----------|----------------|-------------|------------------------|
 | NAMESPACE |      NAME      | TARGET PORT |          URL           |
 |-----------|----------------|-------------|------------------------|
 | default   | hello-minikube |             | http://127.0.0.1:60123 |
 |-----------|----------------|-------------|------------------------|
-
-6. username-MBP:~ username$ kubectl delete deployment
+```
+6. 
+```
+username-MBP:~ username$ kubectl delete deployment
 username-MBP:~ username$ kubectl delete services hello-minikube
 service "hello-minikube" deleted
 username-MBP:~ username$ kubectl delete deployment hello-minikube
 deployment.apps "hello-minikube" deleted
 username-MBP:~ username$ 
+```
