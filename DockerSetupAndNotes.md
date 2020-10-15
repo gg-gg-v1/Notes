@@ -149,8 +149,8 @@ metadata:
 
 spec:
   containers:
-    - name: nginx-container
-      image: nginx
+  - name: nginx-container
+    image: nginx
 ```
 
 run below command to create the pod with k8s.
