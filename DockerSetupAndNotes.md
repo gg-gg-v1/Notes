@@ -132,3 +132,7 @@ once you setup 3 vms-> 1st as master and other 2 as worker node.
 36. kubectl get pods 
 
 37. kubectl run nginx --image=nginx
+
+38. kubectl delete deployment/nginx
+
+39. 
