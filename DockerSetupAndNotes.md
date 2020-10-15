@@ -150,8 +150,10 @@ metadata:
 spec:
   containers:
     - name: nginx-container
-		  image: nginx
+      image: nginx
 ```
 
 run below command to create the pod with k8s.
 kubectl create -f pod-definition.yml
+
+41. install pycharm plugin in intellij for yaml file and validate using yamllint website
