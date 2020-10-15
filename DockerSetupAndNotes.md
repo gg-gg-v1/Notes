@@ -136,3 +136,22 @@ once you setup 3 vms-> 1st as master and other 2 as worker node.
 38. kubectl delete deployment/nginx
 
 39. kubectl get services -> to get list of services on cluster
+
+40. pod-definition.yml
+```
+version: v1
+api: Pod
+metadata:
+    name: myapp-pod
+    labels:
+    	app: myapp
+    	type: front-end
+
+spec:
+	containers:
+		- name: nginx-container
+		  image: nginx
+```
+
+run below command to create the pod with k8s.
+kubectl create -f pod-definition.yml
