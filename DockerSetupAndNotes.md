@@ -128,3 +128,7 @@ once you setup 3 vms-> 1st as master and other 2 as worker node.
 34. kubeadm init -> to initialize the master
 
 35. kubectl get pods -all-namespaces -> will show all running pods
+
+36. kubectl get pods 
+
+37. kubectl run nginx --image=nginx
