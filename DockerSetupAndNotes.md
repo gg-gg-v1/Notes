@@ -135,4 +135,4 @@ once you setup 3 vms-> 1st as master and other 2 as worker node.
 
 38. kubectl delete deployment/nginx
 
-39. 
+39. kubectl get services -> to get list of services on cluster
