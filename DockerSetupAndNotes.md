@@ -158,4 +158,106 @@ kubectl create -f pod-definition.yml
 
 41. install [Rubernetes and openshift resource support]pycharm plugin in intellij for yaml file and validate using yamllint website
 
-42. 
+42. cat > replicaset-definition.yml
+
+```
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myapp-replicaset
+  labels:
+    app: myapp
+    type: front-end
+spec:
+  template:
+    metadata:
+      name: myapp-pod
+      labels:
+        app: myapp
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: myapp
+
+```
+
+kubectl create -f replicaset-definition.yml
+
+kubectl get replicaset
+
+kubectl describe replicaset
+
+kubectl get pods
+
+kubectl delete pod myapp-replicaset-qwre
+
+kubectl get pods
+
+now if you create another pod with this pod-definitiom.yml
+
+now let's assume if we have this file below
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-pod
+  labels:
+    app: myapp
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+```
+kubectl create -f pod-definition.yml -> pod will start getting created but it will be in terminating state because myapp-pod is already created in replicaset-definition.yml
+
+kubectl get pods
+
+kubectl get pods -o wide -> will show IP and NODE details as well
+
+NOW replcate command , to replace the replicas to 6
+
+```
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myapp-replicaset
+  labels:
+    app: myapp
+    type: front-end
+spec:
+  template:
+    metadata:
+      name: myapp-pod
+      labels:
+        app: myapp
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx
+  replicas: 6
+
+  selector:
+    matchLabels:
+      app: myapp
+
+```
+
+kubectl replace -f replicaset-definition.yml
+
+kubectl get replicaset
+
+kubectl describe replicaset
+
+another approach to replace the replicas to 6 
+
+kubectl scale --replicas=3 replicaset-definition.yml
+
+kubectl get replicaset
+
+kubectl get all
+
