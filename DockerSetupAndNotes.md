@@ -115,3 +115,14 @@ docker network create \
   custom-isolated-network
 ```
 above command will create the new user definer or our custom network
+
+
+Kubernetes aka k8s
+
+once you setup 3 vms-> 1st as master and other 2 as worker node.
+
+31. sudo apt-get update
+32. sudo apt-get install -y docker.io
+33. I m skippingthe part shown in video no. 7. Demo - Kubeadm - Part 2 - Configure Cluster with kubeadm -> refer this for aws k8s cluster setup with kubeadm
+
+34.
