@@ -125,4 +125,4 @@ once you setup 3 vms-> 1st as master and other 2 as worker node.
 32. sudo apt-get install -y docker.io
 33. I m skippingthe part shown in video no. 7. Demo - Kubeadm - Part 2 - Configure Cluster with kubeadm -> refer this for aws k8s cluster setup with kubeadm
 
-34.
+34.b
