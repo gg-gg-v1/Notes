@@ -139,17 +139,17 @@ once you setup 3 vms-> 1st as master and other 2 as worker node.
 
 40. pod-definition.yml
 ```
-version: v1
-api: Pod
+apiVersion: v1
+kind: Pod
 metadata:
-    name: myapp-pod
+  name: myapp-pod
     labels:
-    	app: myapp
-    	type: front-end
+      app: myapp
+      type: front-end
 
 spec:
-	containers:
-		- name: nginx-container
+  containers:
+    - name: nginx-container
 		  image: nginx
 ```
 
