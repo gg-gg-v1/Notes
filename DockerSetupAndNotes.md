@@ -261,3 +261,4 @@ kubectl get replicaset
 
 kubectl get all
 
+43. for the actual deployment on prod, we ll create Deployment as Kind not Replicaset.
