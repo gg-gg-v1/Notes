@@ -262,3 +262,8 @@ kubectl get replicaset
 kubectl get all
 
 43. for the actual deployment on prod, we ll create Deployment as Kind not Replicaset.
+
+44. rollout status -> kubectl rollout status deployment/myapp-deployment
+
+45. kubectl rollout history deployment/myapp-deployment
+
