@@ -268,3 +268,8 @@ kubectl get all
 45. kubectl rollout history deployment/myapp-deployment
 
 46. two deployment strategy are there 1. recreate[app will be down for some time] and 2. rolling update[this is default one]
+
+below two command is to update the container image from nginx to nginx:1.9.1
+47. kubectl apply -f deployment-definition.yml
+
+48. kubectl set image deployment/myapp-deployment nginx=nginx:1.9.1
