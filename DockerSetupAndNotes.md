@@ -267,3 +267,4 @@ kubectl get all
 
 45. kubectl rollout history deployment/myapp-deployment
 
+46. two deployment strategy are there 1. recreate[app will be down for some time] and 2. rolling update[this is default one]
