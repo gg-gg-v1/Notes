@@ -273,3 +273,7 @@ below two command is to update the container image from nginx to nginx:1.9.1
 47. kubectl apply -f deployment-definition.yml
 
 48. kubectl set image deployment/myapp-deployment nginx=nginx:1.9.1
+
+49. kubectl rollout undo deployment/myapp-development
+
+50. 
