@@ -26,11 +26,27 @@ git status
 git commit -m "some message"
 git push
 ```
+7. make copy of the repo in local with below command of clone 
 
+```
+ git clone fileUpload/ replicaOfFileUpload
+```
 
 
 EXTRA IMP- >> look for password reset commands
 ```
 git config --global user.email <youremailid>
 git config --global user.name <username>
+```
+
+8. to see which exactly file got commited
+```
+git add test1.txt
+git commit -m "message"
+
+git write-tree
+81581fd44d32f2655d0bd79bb2fc517c4dee593d
+
+git cat-file -p 81581fd44d32f2655d0bd79bb2fc517c4dee593d
+100644 blob 81581fd44d32f2655d0bd79bb2fc517c4dee593d	test1.txt
 ```
