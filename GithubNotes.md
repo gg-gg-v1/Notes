@@ -8,3 +8,8 @@ Initialized empty Git repository in /Users/bharat/gitcourse/.git/
 ```
 git clone https://github.com/gg-gg-codes/fileUpload.git
 ```
+3. ls into this repo on local ...
+
+4. 
+
+EXTRA IMP- >> look for password reset commands
