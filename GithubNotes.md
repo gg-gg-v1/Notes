@@ -18,6 +18,17 @@ git commit -m "some git commit message"
 
 5. git status 
 
+6. remove the file and commit and push
+```
+
+git rm file.txt
+git status
+git commit -m "some message"
+git push
+```
+
+
+
 EXTRA IMP- >> look for password reset commands
 ```
 git config --global user.email <youremailid>
