@@ -72,3 +72,7 @@ git branch
 ```
 git branch -d demo
 ```
+14. push new branch to gitrepo..and lets assume master is already created.
+```
+git push origin HEAD
+```
