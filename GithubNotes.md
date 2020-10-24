@@ -3,4 +3,8 @@
 Bharats-MacBook-Pro:gitcourse bharat$ git init
 Initialized empty Git repository in /Users/bharat/gitcourse/.git/
 ```
-2. 
+2.  assume u have fileUpload as the repo.
+
+```
+
+```
