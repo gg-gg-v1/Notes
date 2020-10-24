@@ -60,7 +60,15 @@ git show-branch
 ```
 git checkout -b "demo"
 ```
-11. switching to a new branch
+11. switching to a  branch
 ```
 git checkout master
+```
+12. current branch in use
+```
+git branch
+```
+13. delete the branch, before deleting branch you have to be on another branch e.g. to delete demo branch you have to be on mastaer or develop etc.
+```
+git branch -d demo
 ```
