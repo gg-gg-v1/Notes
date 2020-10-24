@@ -6,5 +6,5 @@ Initialized empty Git repository in /Users/bharat/gitcourse/.git/
 2.  assume u have fileUpload as the repo.
 
 ```
-
+git clone https://github.com/gg-gg-codes/fileUpload.git
 ```
