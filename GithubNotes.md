@@ -16,6 +16,8 @@ git clone https://github.com/gg-gg-codes/fileUpload.git
 git commit -m "some git commit message"
 ```
 
+5. git status 
+
 EXTRA IMP- >> look for password reset commands
 ```
 git config --global user.email <youremailid>
