@@ -13,3 +13,7 @@ git clone https://github.com/gg-gg-codes/fileUpload.git
 4. 
 
 EXTRA IMP- >> look for password reset commands
+```
+git config --global user.email <youremailid>
+git config --global user.email <yourname>
+```
