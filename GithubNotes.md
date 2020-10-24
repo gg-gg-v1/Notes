@@ -10,7 +10,11 @@ git clone https://github.com/gg-gg-codes/fileUpload.git
 ```
 3. ls into this repo on local ...
 
-4. 
+4. git commit 
+
+```
+git commit -m "some git commit message"
+```
 
 EXTRA IMP- >> look for password reset commands
 ```
