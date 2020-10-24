@@ -50,3 +50,17 @@ git write-tree
 git cat-file -p 81581fd44d32f2655d0bd79bb2fc517c4dee593d
 100644 blob 81581fd44d32f2655d0bd79bb2fc517c4dee593d	test1.txt
 ```
+
+9. show the branch
+```
+git show-branch
+```
+
+10. create new branch 'demo'
+```
+git checkout -b "demo"
+```
+11. switching to a new branch
+```
+git checkout master
+```
