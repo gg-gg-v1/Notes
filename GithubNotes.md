@@ -76,3 +76,17 @@ git branch -d demo
 ```
 git push origin HEAD
 ```
+15. git difference between files
+```
+git add file1
+git commit -m "file1 one old content - foo"
+
+eacho "abc" > file1
+git diff
+--- a/diff_exmaple/file1
++++ b/diff_exmaple/file1
+@@ -1 +1 @@
+-foo
++abc
+git commit -m "file has been modified" -> now new content will get committed
+```
