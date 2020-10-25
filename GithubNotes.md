@@ -76,6 +76,31 @@ git branch -d demo
 ```
 git push origin HEAD
 ```
+
+14.1 create new branch lets say branch1 and if u want to push it to repo then do this 
+```
+git push origin HEAD
+```
+then you will see new branch branch1 in repo.
+
+14.2 if you want to make changes or push all latest changed in branch1 then do this.
+```
+git add somefile.txt
+git commit -m "somefile is getting added to branch branch1"
+git push origin HEAD
+OR 
+git push
+```
+
+14.3 now if you want to merge the branch branch1 to master then do this
+
+```
+first switch to master branch
+git checkout master
+now merge branch1 into master with below command
+git merge branch1
+```
+
 15. git difference between files
 ```
 git add file1
