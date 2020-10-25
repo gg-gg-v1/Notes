@@ -142,3 +142,22 @@ git push
 now your branach is merged with new changes
 ```
 17.2 pull issue bw two changes of same branch
+```
+Bharats-MacBook-Pro:demoRepo bharat$ git push origin HEAD
+git: 'credential-wincred' is not a git command. See 'git --help'.
+Username for 'https://github.com': gg-gg-codes
+Password for 'https://gg-gg-codes@github.com': 
+git: 'credential-wincred' is not a git command. See 'git --help'.
+To https://github.com/gg-gg-codes/demoRepo.git
+ ! [rejected]        HEAD -> demo (fetch first)
+error: failed to push some refs to 'https://github.com/gg-gg-codes/demoRepo.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+git pull origin demo
+git add new.txt
+git commit -m "nextxt"
+```
