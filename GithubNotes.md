@@ -115,3 +115,30 @@ git diff
 +abc
 git commit -m "file has been modified" -> now new content will get committed
 ```
+
+16. git log to see the history of commits
+```
+git log
+```
+
+17.1 merge conflict bw two branches
+```
+on demo branch
+changes file new.txt
+git add new.txt
+git commit -m "nextxt"
+git push
+PUSH done on demo branch
+now merge this to master
+switch to master -> git checkout master
+onn master
+type
+git merge demo
+you will see conflicts now if new txt is already present in master so solve it by below method
+vi new.txt
+make changes and do git add new.txt
+again do git commit 
+git push
+now your branach is merged with new changes
+```
+17.2 pull issue bw two changes of same branch
