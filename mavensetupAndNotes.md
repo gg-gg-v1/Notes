@@ -104,3 +104,7 @@ runtime	runtime	–	runtime	–
 test	test	–	test	–
 
 ```
+
+MAVEN COMMANDS:
+
+1. create exucutable jar -> mvn clean package
