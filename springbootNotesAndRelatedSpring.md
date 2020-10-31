@@ -68,3 +68,11 @@ myconfig:
  ==============================================================================================
  
  with --debug option in program arguments, you can see which configuration got included in autoconfiguration and which got excluded from that
+
+Security :
+
+security.user.name=password
+security.user.password=password
+
+dependency:
+spring-boot-starter-security
