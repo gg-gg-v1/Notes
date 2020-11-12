@@ -161,3 +161,9 @@ git pull origin demo
 git add new.txt
 git commit -m "nextxt"
 ```
+
+18. push your local branch to remote
+git push origin add-edit-api-projectUseCaseServiceFix
+
+19. intellij
+commit and push -> you will see your changes but first do the git push origin add-edit-api-projectUseCaseServiceFix
