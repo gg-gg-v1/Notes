@@ -167,3 +167,15 @@ git push origin add-edit-api-projectUseCaseServiceFix
 
 19. intellij
 commit and push -> you will see your changes but first do the git push origin add-edit-api-projectUseCaseServiceFix
+
+
+20. push newly created repo to git hub
+first add remote origin
+```
+git remote add origin http://yourmainprojectrepo.git
+check via this
+git remote
+now push new branch to this origin
+git push --set-upstream origin my-new-branch
+
+```
