@@ -179,3 +179,22 @@ now push new branch to this origin
 git push --set-upstream origin my-new-branch
 
 ```
+
+21. MERGE conlflicts
+  139  git merge master
+  140  git status
+  141  git merge master
+  142  git add .
+  143  git commit -m "resolving merge conflicts"
+  144  git push
+  145  git merge master
+  146  git checkout master
+  147  git merge zalenium-selenium
+  148  git push
+  149  git status
+  150  git add .
+  151  git commit -m "formatting pom"
+  152  git push
+  153  git history
+  154  git reflog
+  155  history
