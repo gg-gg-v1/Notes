@@ -181,6 +181,7 @@ git push --set-upstream origin my-new-branch
 ```
 
 21. MERGE conlflicts
+```
   139  git merge master
   140  git status
   141  git merge master
@@ -198,3 +199,4 @@ git push --set-upstream origin my-new-branch
   153  git history
   154  git reflog
   155  history
+```
