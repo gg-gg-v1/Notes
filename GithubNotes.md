@@ -227,3 +227,8 @@ git stash apply stash@{n}
 
 Where n is the index of the stashed change.
 ```
+
+23. GIT create new branch from specific branch 
+```
+$ git checkout -b mybranch develop
+```
