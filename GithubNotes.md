@@ -200,3 +200,30 @@ git push --set-upstream origin my-new-branch
   154  git reflog
   155  history
 ```
+
+22. Stash GIT
+```
+
+
+This is how you do it:
+
+git stash push -m "my_stash"
+
+Where "my_stash" is the stash name.
+
+Some more useful things to know: All the stashes are stored in a stack. Type:
+
+git stash list
+
+This will list down all your stashes.
+
+To apply a stash and remove it from the stash stack, type:
+
+git stash pop stash@{n}
+
+To apply a stash and keep it in the stash stack, type:
+
+git stash apply stash@{n}
+
+Where n is the index of the stashed change.
+```
