@@ -232,3 +232,9 @@ Where n is the index of the stashed change.
 ```
 $ git checkout -b mybranch develop
 ```
+
+24. git password reset
+
+git config --global credential.helper osxkeychain
+
+then password promt ll come 
