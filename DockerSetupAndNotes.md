@@ -277,3 +277,5 @@ below two command is to update the container image from nginx to nginx:1.9.1
 49. kubectl rollout undo deployment/myapp-development
 
 50. 
+running docker contaier in diff environment
+docker run -d -e "spring.profiles.active=production" <image-name>
