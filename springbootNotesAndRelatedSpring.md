@@ -76,3 +76,8 @@ security.user.password=password
 
 dependency:
 spring-boot-starter-security
+
+spring boot run with arguments
+```
+mvn spring-boot:run -Dspring-boot.run.arguments=-spring.profiles.active=production
+```
