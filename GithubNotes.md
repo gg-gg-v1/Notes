@@ -238,3 +238,6 @@ $ git checkout -b mybranch develop
 git config --global credential.helper osxkeychain
 
 then password promt ll come 
+
+25. rename branch
+git branch -m oldbranchname newbranchname
