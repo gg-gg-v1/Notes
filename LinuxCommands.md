@@ -12,3 +12,8 @@ cal 1 2020
 ```
 cd -
 ```
+
+4. list the file based on modification date.
+```
+ls -t
+```
