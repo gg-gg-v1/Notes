@@ -17,3 +17,5 @@ cd -
 ```
 ls -t
 ```
+5. rmdir dir1 dir2 dir3 -> remove only empty directory
+6. rm file1 file2 file3 -. remove files
