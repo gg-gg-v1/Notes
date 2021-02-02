@@ -241,3 +241,29 @@ then password promt ll come
 
 25. rename branch
 git branch -m oldbranchname newbranchname
+
+26. WORKING with DETACHAED HEAD, if while merging u get this you can follow below steps to resolve this.
+```
+* (HEAD detached from origin/master)
+  jest
+  master
+```
+
+```
+git fetch origin
+git checkout -b jest origin/jest
+
+git fetch origin
+git checkout origin/master
+
+now if you get this 
+HEAD is now at d39387d Merge branch 'revert-b6f0c889' into 'master'
+
+then do this
+git merge --no-ff jest
+yoou may get merge conflicts, resolve them
+commit them
+git add .
+git commit -m "accepting merge change"
+git push origin HEAD:master
+```
