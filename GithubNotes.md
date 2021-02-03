@@ -267,3 +267,9 @@ git add .
 git commit -m "accepting merge change"
 git push origin HEAD:master
 ```
+
+27. show remote origin url 
+```
+ git config --get remote.origin.url
+
+```
