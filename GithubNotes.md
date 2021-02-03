@@ -273,3 +273,7 @@ git push origin HEAD:master
  git config --get remote.origin.url
 
 ```
+28. set new git url
+```
+git remote set-url origin new.git.url/here
+```
