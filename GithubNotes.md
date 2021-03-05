@@ -277,3 +277,8 @@ git push origin HEAD:master
 ```
 git remote set-url origin new.git.url/here
 ```
+
+29. git revert commit 
+  ```git revert --no-commit 0766c053..HEAD
+git commit
+git push```
