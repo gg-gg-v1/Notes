@@ -282,3 +282,9 @@ git remote set-url origin new.git.url/here
   ```git revert --no-commit 0766c053..HEAD
 git commit
 git push```
+
+
+
+20. setting username and password 
+
+```git remote set-url origin https://gg-gg-v1:Kalandri123.@github.com/gg-gg-v1/noVNCJmeter.git```
