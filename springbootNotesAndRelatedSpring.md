@@ -147,3 +147,27 @@ public class OrderController {
 }
 ```
 if we save customer info, then product info will also get saved...
+
+below is the ignore properties and include only non default.
+```
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonInclude(JsonInclude.Include.NON_DEFAULT)
+public class OrderResponse {
+
+    private String name;
+    private String productName;
+
+    public OrderResponse(String name, String productName) {
+        this.name = name;
+        this.productName = productName;
+    }
+
+    private int price;
+}
+```
+
